@@ -1,0 +1,42 @@
+#ded-tooltip {
+	padding: 12px 24px;
+	color: #000;
+	position: absolute;
+	width: 330%;
+	display: none;
+	flex-direction: column;
+	gap: 8px;
+	top: 56%;
+	left: -690%;
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 300;
+	z-index: 10;
+	background: #ffffff;
+	border-radius: 6px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	cursor: pointer;
+	transform: scale(2.4);
+}
+
+#ded-tooltip.tooltip-active {
+	display: flex;
+}
+
+#ded-tooltip:after {
+	content: '';
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 27px;
+	right: -16px;
+	background-image: url("data:image/svg+xml,%3Csvg fill='%23ffffff' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' stroke='%23ffffff'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+#ded-tooltip .headline {
+	font-weight: 400;
+}
+

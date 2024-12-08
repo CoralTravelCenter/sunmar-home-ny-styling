@@ -1,0 +1,93 @@
+#__next > div > div {
+	position: relative;
+}
+
+#__next > div > div::before {
+	content: '';
+	width: min(12.5%, 255px);
+	aspect-ratio: 1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 20;
+	background-image: url(https://b2ccdn.sunmar.ru/content/left-branch.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top left;
+	pointer-events: none;
+}
+
+#__next > div > div:after {
+	content: '';
+	width: min(12.5%, 300px);
+	aspect-ratio: 1;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 20;
+	background-image: url(https://b2ccdn.sunmar.ru/content/right-branch.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top right;
+	pointer-events: none;
+}
+
+#quick-search-tab-area {
+	z-index: 5 !important;
+	position: relative;
+}
+
+#quick-search-tab-area:after {
+	content: '';
+	width: min(20%, 153px);
+	height: 40%;
+	position: absolute;
+	right: 15%;
+	top: -6px;
+	z-index: 100;
+	background-image: url(https://b2ccdn.sunmar.ru/content/top-right-ice.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	pointer-events: none;
+}
+
+
+#quick-search-tab-area + div {
+	position: relative;
+}
+
+#quick-search-tab-area + div:after {
+	content: '';
+	width: min(20%, 371px);
+	height: 98px;
+	position: absolute;
+	left: 8%;
+	top: -16px;
+	z-index: 10;
+	background-image: url("https://b2ccdn.sunmar.ru/content/left-ice.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	pointer-events: none;
+}
+
+#quick-search-tab-area + div::before {
+	content: '';
+	width: min(20%, 160px);
+	height: 20%;
+	position: absolute;
+	right: -2.5%;
+	top: -8px;
+	z-index: 1;
+	background-image: url("https://b2ccdn.sunmar.ru/content/top-left-ice.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	pointer-events: none;
+}
+
+.blJplz {
+	z-index: 30;
+	position: relative;
+}
